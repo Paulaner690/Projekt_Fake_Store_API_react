@@ -1,0 +1,31 @@
+/* === HOME === */
+.loading{
+    text-align: center;
+    font-size: 3rem;
+    padding: 4rem;
+}
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.shop-item{
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(252, 242, 228);
+    border-radius: 7px;
+}
+
+.shop-item img{
+    height: 15rem;
+    object-fit: scale-down;
+}
+.title{
+    margin-top: 2rem;
+}
+
+.price{
+    margin-bottom: 1srem;
+}
