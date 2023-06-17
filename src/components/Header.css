@@ -8,28 +8,35 @@ header{
     width: 100vw;
     text-align: center;
     padding: 2rem;
-    background-color: pink;
-    background: url(https://plus.unsplash.com/premium_photo-1664201890484-a5f7109c8e56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8b25saW5lc2hvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60) center no-repeat;
-    background-size: 100%;
+    background: purple;
+    border-radius: 0 0 5.5rem 5.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 2rem 0 1rem 0;
+    border-radius: 2rem;
 }
 
 h1{
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 500;
     color: white;
+    margin-left: 3rem;
 }
 
 nav{
+    width: 30%;
     display: flex;
     justify-content: space-between;
-    margin: 2rem;
-    padding: 0.5rem;
-    background-color: rgba(255, 235, 205, 0.356);
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-right: 5rem;
 }
 
-.headerNav{
-    background-color: rgba(255, 20, 145, 0.593);
+.link{
+    background-color: deeppink;
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -38,7 +45,11 @@ nav{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.headerNav:hover{
-    background-color: deeppink;
+.link:hover{
+    background-color: rgb(134, 20, 255);
     box-shadow: none;
+}
+
+.active{
+    box-shadow: rgba(0, 250, 50, 0.698) 0px 0px 30px; 
 }

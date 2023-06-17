@@ -24,9 +24,9 @@ const Home = () => {
                     {superProducts.map((item, index) => (
                         <div className="shop-item" key={index}>
                             <img src={item.image} alt={item.title} />
+                            <p className="price">{item.price}€</p>
                             <h4 className="title">{item.title}</h4>
-                            <p className="price">{item.price}</p>
-                            <NavLink to={`/productdetail/${item.id}`}>Read more</NavLink>
+                            <NavLink className="link" to={`/productdetail/${item.id}`}>Read more</NavLink>
                         </div>
                     ))}
                 </article>

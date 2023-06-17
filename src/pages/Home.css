@@ -1,4 +1,8 @@
 /* === HOME === */
+.PageSection{
+    min-height: 100vh;
+}
+
 .loading{
     text-align: center;
     font-size: 3rem;
@@ -12,10 +16,11 @@
 }
 
 .shop-item{
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
-    background-color: rgb(252, 242, 228);
     border-radius: 7px;
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .shop-item img{
@@ -23,9 +28,11 @@
     object-fit: scale-down;
 }
 .title{
-    margin-top: 2rem;
+    height: 5rem;
+    margin: 1rem;
 }
 
 .price{
-    margin-bottom: 1srem;
+    margin: 1rem 2rem;
+    text-align: end;
 }

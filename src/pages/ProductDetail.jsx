@@ -18,20 +18,22 @@ const ProductDetail = () => {
                 console.log("Fehler beim Laden", error)
             })
     }, [])
-    console.log(productsOne)
     const details = productsOne?.filter((item) => {
         return item.id.toString() === params.id
     })
-    console.log(details)
     return ( 
         <>
-        <Header />
-        <section className="detailSection">
-            {/* <img className="detailImg" src={details[0].image} alt={details[0].title} />
-            <h3>{details[0].title}</h3>
-            <h5>{details[0].price} €</h5>
-            <p>{details[0].description}</p> */}
-        </section>
+            <Header />
+            {productsOne ? (
+                <section className="detailSection">
+                    <img className="detailImg" src={details[0].image} alt={details[0].title} />
+                    <h3>{details[0].title}</h3>
+                    <h5>{details[0].price} €</h5>
+                    <p>{details[0].description}</p>
+                </section>
+                ) : (
+                    <p>Daten werden geladen... 🌝</p>
+                )}
         </>
      );
 }
