@@ -4,6 +4,6 @@ https://fake-store-3000.netlify.app/
 
 3. react project
 
->useState
->useEffect (API fetch)
+>useState,
+>useEffect (API fetch),
 >dynamic routing (react-router-dom)
